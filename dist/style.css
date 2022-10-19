@@ -1,0 +1,154 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(30deg, 38%, 92%);
+}
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  margin: 0;
+}
+
+h1,
+.new-price {
+  font-family: "Fraunces", sans-serif;
+  font-size: 35px;
+  line-height: 2rem;
+  margin: 0;
+}
+
+p,
+.old-price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: hsl(228deg, 12%, 48%);
+  line-height: 1.5;
+  text-align: left;
+  word-spacing: 1px;
+}
+
+.wrapper {
+  width: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 780px) {
+  .wrapper {
+    padding-top: 10rem;
+  }
+}
+
+section {
+  width: min(100%, 600px);
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 1rem;
+}
+@media (min-width: 780px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.article-top img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+@media (min-width: 780px) {
+  .article-top img {
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+  }
+}
+
+.article-bottom {
+  padding: 0.5rem 2rem 2rem;
+}
+.article-bottom .head {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.6rem;
+  margin-bottom: 1.3rem;
+  color: hsl(228deg, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+}
+.article-bottom .prices {
+  margin-bottom: 2rem;
+}
+.article-bottom .prices ul {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.article-bottom .prices ul .new-price {
+  color: hsl(158deg, 36%, 37%);
+}
+.article-bottom .prices ul .old-price {
+  text-decoration: line-through;
+}
+.article-bottom .product-description {
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 780px) {
+  .article-bottom {
+    padding: 2rem 2rem;
+  }
+  .article-bottom .head {
+    margin-bottom: 1.5rem;
+  }
+  .article-bottom .product-title {
+    margin-bottom: 1.5rem;
+    line-height: 1rem;
+  }
+  .article-bottom .product-description {
+    margin-bottom: 2rem;
+  }
+  .article-bottom .prices {
+    margin-bottom: 2rem;
+  }
+}
+
+.button {
+  background-color: hsl(158deg, 36%, 37%);
+  border-radius: 5px;
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+}
+.button .cta-btn {
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+.button:hover {
+  background-color: hsl(157deg, 39%, 19%);
+}
+
+.attribution {
+  margin-top: 1rem;
+  font-size: 16px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
