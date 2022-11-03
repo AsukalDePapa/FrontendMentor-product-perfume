@@ -134,19 +134,10 @@ section {
   align-items: center;
   gap: 0.5rem;
   color: white;
-  /* border: none; */
+  border: none;
 }
 .button:hover {
   background-color: hsl(157deg, 39%, 19%);
-}
-button:focus-visible{
-  border: 2px dashed red;
-  border: none;
-}
-@supports not selector(:focus-visible){
-  .button:focus-visible{
-    outline: 2px dashed red;
-  }
 }
 
 
@@ -157,5 +148,6 @@ button:focus-visible{
 }
 
 .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: hsl(158deg, 36%, 37%);
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
