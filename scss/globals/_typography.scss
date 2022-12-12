@@ -1,0 +1,19 @@
+@use '../utils' as utils;
+
+h1,
+.new-price{
+    font-family: utils.$fraunces;
+    font-size: 35px;
+    line-height: 2rem;
+    margin: 0;
+}
+
+p,
+.old-price{
+    font-family: utils.$montserrat;
+    font-size: 14px;
+    color: utils.$paragraph-color;
+    line-height: 1.5;
+    text-align: left;
+    word-spacing: 1px;
+}
