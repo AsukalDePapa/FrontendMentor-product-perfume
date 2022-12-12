@@ -1,0 +1,124 @@
+@use '../utils' as utils;
+
+.wrapper{
+    width: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 780px) {
+        padding-top: 10rem;
+    }
+}
+
+section{
+    width: min(100%, 600px);
+    background-color: utils.$background-alt-color;
+    border-radius: 1rem;
+
+    @media (min-width: 780px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.article-top{
+    img{
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+    
+    @media (min-width: 780px) {
+        img{
+            height: 100%;
+            border-radius: 1rem 0 0 1rem;
+        }
+    }
+}
+
+.article-bottom{
+    padding: .5rem 2rem 2rem;
+
+    .head{
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: .6rem;
+        margin-bottom: 1.3rem;
+        color:  utils.$paragraph-color;
+        font-family: utils.$montserrat;
+    }
+
+    .prices{
+        margin-bottom: 2rem;
+        ul{
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+
+            .new-price{
+                color: utils.$price-color;
+            }
+
+            .old-price{
+                text-decoration: line-through;
+            }
+        }
+    }
+
+    .product-description{
+        margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 780px) {
+        padding: 2rem 2rem;
+        .head{
+            margin-bottom: 1.5rem;
+        }
+
+        .product-title{
+            margin-bottom: 1.5rem;
+            line-height: 1rem;
+        }
+
+        .product-description{
+            margin-bottom: 2rem;
+        }
+
+        .prices{
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.button{
+    background-color: utils.$button-color;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    color: white;
+
+    .cta-btn{
+        font-weight: 500;
+        font-family: utils.$montserrat;
+    }
+
+    &:hover{
+        background-color: utils.$button-alt-color;
+    }
+}
+
+.attribution { 
+    margin-top: 1rem;
+    font-size: 16px; 
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
